@@ -231,7 +231,7 @@ func (s *CreateCmdSuite) TestCreateCmd() {
 				dir = filepath.Join(baseDir, dir)
 			}
 
-			err := createCmd(dir, c.startTime, c.format, c.name, c.ext, c.seq, c.seqDigits, false)
+			err := createCmd(dir, c.startTime, c.format, c.name, c.ext, c.seq, c.seqDigits, []string{"up", "down"}, false)
 
 			if c.expectedErr != nil {
 				s.EqualError(err, c.expectedErr.Error())
