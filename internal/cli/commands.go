@@ -139,10 +139,13 @@ func createFile(filename string) error {
 	// create exclusive (fails if file already exists)
 	// os.Create() specifies 0666 as the FileMode, so we're doing the same
 	f, err := os.OpenFile(filename, os.O_RDWR|os.O_CREATE|os.O_EXCL, 0666)
-
 	if err != nil {
 		return err
 	}
+
+	f.WriteString("---\n")
+	f.WriteString("--- Please add a description here\n")
+	f.WriteString("---\n")
 
 	return f.Close()
 }
