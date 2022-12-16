@@ -7,7 +7,7 @@ import (
 
 	"log"
 
-	"github.com/golang-migrate/migrate/v4"
+	"github.com/chadwpetersen/migrate"
 	"io"
 	"os"
 	"strconv"
@@ -23,9 +23,9 @@ import (
 )
 
 import (
-	dt "github.com/golang-migrate/migrate/v4/database/testing"
-	"github.com/golang-migrate/migrate/v4/dktesting"
-	_ "github.com/golang-migrate/migrate/v4/source/file"
+	dt "github.com/chadwpetersen/migrate/database/testing"
+	"github.com/chadwpetersen/migrate/dktesting"
+	_ "github.com/chadwpetersen/migrate/source/file"
 )
 
 var (

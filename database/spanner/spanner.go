@@ -15,8 +15,8 @@ import (
 	sdb "cloud.google.com/go/spanner/admin/database/apiv1"
 	"cloud.google.com/go/spanner/spansql"
 
-	"github.com/golang-migrate/migrate/v4"
-	"github.com/golang-migrate/migrate/v4/database"
+	"github.com/chadwpetersen/migrate"
+	"github.com/chadwpetersen/migrate/database"
 
 	"github.com/hashicorp/go-multierror"
 	uatomic "go.uber.org/atomic"

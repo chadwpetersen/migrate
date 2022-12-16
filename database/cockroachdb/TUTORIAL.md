@@ -122,9 +122,9 @@ Here is a very simple app running migrations for the above configuration:
 import (
 	"log"
 
-	"github.com/golang-migrate/migrate/v4"
-	_ "github.com/golang-migrate/migrate/v4/database/cockroachdb"
-	_ "github.com/golang-migrate/migrate/v4/source/file"
+	"github.com/chadwpetersen/migrate"
+	_ "github.com/chadwpetersen/migrate/database/cockroachdb"
+	_ "github.com/chadwpetersen/migrate/source/file"
 )
 
 func main() {

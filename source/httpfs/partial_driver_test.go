@@ -6,9 +6,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/golang-migrate/migrate/v4/source"
-	"github.com/golang-migrate/migrate/v4/source/httpfs"
-	st "github.com/golang-migrate/migrate/v4/source/testing"
+	"github.com/chadwpetersen/migrate/source"
+	"github.com/chadwpetersen/migrate/source/httpfs"
+	st "github.com/chadwpetersen/migrate/source/testing"
 )
 
 type driver struct{ httpfs.PartialDriver }

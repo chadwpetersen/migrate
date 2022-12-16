@@ -10,8 +10,8 @@ import (
 
 	"go.uber.org/atomic"
 
-	"github.com/golang-migrate/migrate/v4"
-	"github.com/golang-migrate/migrate/v4/database"
+	"github.com/chadwpetersen/migrate"
+	"github.com/chadwpetersen/migrate/database"
 	"github.com/hashicorp/go-multierror"
 	_ "github.com/mattn/go-sqlite3"
 )
